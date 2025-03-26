@@ -1,0 +1,92 @@
+.analytics {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .analytics > .content {
+    margin-bottom: 20px;
+  }
+  
+  .analytics .title {
+    margin-bottom: 20px;
+  }
+  
+  .analytics .timeFrameSelector {
+    margin-bottom: 20px;
+  }
+  
+  .analytics .label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+  
+  .analytics .select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .analytics .table {
+    margin: 15px 0;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .analytics .header {
+    padding: 12px;
+    text-align: left;
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  .analytics .row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .analytics .cell {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .analytics .row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .analytics .bestPrank {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  .analytics .bestPrank .sectionTitle {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .analytics .bestPrank .prankContent {
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .analytics .bestPrank .prankContent .prankTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+  }
+  
+  .analytics .bestPrank .prankContent .prankDescription {
+    margin: 0;
+    color: #666;
+    font-style: italic;
+  }

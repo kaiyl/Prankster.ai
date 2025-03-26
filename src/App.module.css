@@ -1,0 +1,48 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.appBar {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+}
+
+.appBar img {
+  height: 80px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.appBar h2 {
+  margin: 0;
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.content {
+  padding: 20px;
+}
+
+.analyticsContainer {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
