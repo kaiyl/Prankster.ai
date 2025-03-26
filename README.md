@@ -11,37 +11,41 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Development Enviornement
+- Node.js environment
+- TypeScript-enabled development setup (.tsx files are present)
+- Modern web browser support (using modern React features and ES6+ syntax)
 
-### `npm test`
+Dependencies:
+- Dependencies
+    1. Node.js (v16+)
+    2. LaunchDarkly account and SDK key
+    3. requires internet connection for LaunchDarkly feature flag service
+    4. React version v19.0.0
+    5. For Styling, Material UI was used for organization, themes and icons, while some styling was done via in line CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Specifically
+    1. `sudo npx create-react-app prankapp --template typescript && cd prankapp`
+    2. `sudo npm install --save-dev ajv@^7`
+        1. The version in my project by default of ajv-keywords is expecting ajv v6's structure, not ajv v7's
+        2. against the codegen error
+    3. `sudo chown -R kylemorton /Users/kylemorton/prankapp2`
+    4. Upon first npm start
+        - `sudo npm start`
+            1. [I had to run](https://stackoverflow.com/questions/75977710/when-i-run-npm-start-after-creating-react-app-its-giving-me-this-error) the `sudo npm start` command only once, after that, I was able to run the `npm start` command without any errors
+    5. `sudo npm install launchdarkly-react-client-sdk`
+    6. `sudo npm install @mui/styles`
+        1. import EventIcon from '@mui/icons-material/Event';
+    7. `sudo npm install @mui/icons-material`
+        - for Thumbs up icon etc..
+    8. `sudo npm install @mui/material @emotion/react @emotion/styled`
 
-### `npm run build`
+    Build /  Runtime requirements
+    - Uses react-scripts (Create React App based project)
+    - Requires a web server to serve the application
+    - Default port 3000 for development (standard Create React App config)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Storage / Backend
+    - No backend, only Client-side with state management
+    - New Posts are stored in memory using React’s useState hook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# Prankster.ai
