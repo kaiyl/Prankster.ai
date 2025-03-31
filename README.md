@@ -21,17 +21,10 @@ Dependencies:
 - Specifically
     1. `sudo npx create-react-app prankapp --template typescript && cd prankapp`
     2. `sudo npm install --save-dev ajv@^7`
-        1. The version in my project by default of ajv-keywords is expecting ajv v6's structure, not ajv v7's
-        2. against the codegen error
     3. `sudo chown -R kylemorton /Users/kylemorton/prankapp2`
-    4. Upon first npm start
-        - `sudo npm start`
-            1. [I had to run](https://stackoverflow.com/questions/75977710/when-i-run-npm-start-after-creating-react-app-its-giving-me-this-error) the `sudo npm start` command only once, after that, I was able to run the `npm start` command without any errors
     5. `sudo npm install launchdarkly-react-client-sdk`
     6. `sudo npm install @mui/styles`
-        1. import EventIcon from '@mui/icons-material/Event';
     7. `sudo npm install @mui/icons-material`
-        - for Thumbs up icon etc..
     8. `sudo npm install @mui/material @emotion/react @emotion/styled`
 
     Build /  Runtime requirements
